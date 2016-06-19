@@ -1,0 +1,11 @@
+<ion-view view-title="Badges">
+  <ion-content class="padding">
+    <ion-list>
+      <ion-item  class="item-thumbnail-left" ng-repeat="badge in badges">
+        <img ng-src="{{badge.icon_url}}">
+          <h2>{{badge.name}}</h2>
+          Earned on: {{badge.earned_date | date}}
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
